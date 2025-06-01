@@ -11,7 +11,7 @@ import base64
 st.set_page_config(page_title="Autism Prediction App", page_icon="🌟", layout="wide")
 
 # Load the saved model and scaler using local file paths
-model_path = r'C:\Users\mohammed bilal\OneDrive\Desktop\ISL\entire_model.pkl'
+model_path = 'entire_model.pkl'
 model_data = joblib.load(model_path)
 voting_classifier = model_data['model']
 scaler = model_data['scaler']
